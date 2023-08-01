@@ -1,0 +1,14 @@
+<div id="box_chat" *ngIf="friendship" >
+    <span *ngFor="let message of messageService.messages | async">
+        <span id="friend_mess" *ngIf="message.senderEmail == friendship.friendEmail" >
+            {{message.content}}
+        </span>
+        <span id="my_mess" *ngIf="message.senderEmail == myEmail" >
+            {{message.content}}
+        </span>
+    </span>
+</div>
+
+<div *ngIf="!friendship">
+    <h2>Add new friend or choose one in friends list</h2>
+</div>

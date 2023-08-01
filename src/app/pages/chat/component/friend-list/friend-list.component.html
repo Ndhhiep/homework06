@@ -1,0 +1,20 @@
+<div id="box">
+  <div id="header">
+    <div id="head_bar">
+      <div><b>Friends list ({{ getTotalFriend() }})</b></div>
+    </div> 
+  </div>
+
+  <div id="body">
+    <hr />
+    <div *ngFor="let friendship of friendList">
+      <div id="fr_container">
+        <button id="select" (click)="chatWith(friendship)">
+          {{ friendship.friendEmail }}
+        </button>
+        <button id="delete" (click)="deleteFriend(friendship)">Delete</button>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>

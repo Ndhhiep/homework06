@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "chat-web-51138": {
+      "hosting": {
+        "chat_web": [
+          "chat-web-51138"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "chat-web-51138"
+  }
+}

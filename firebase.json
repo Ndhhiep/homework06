@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "chat_web",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

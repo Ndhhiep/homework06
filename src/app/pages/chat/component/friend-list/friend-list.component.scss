@@ -1,0 +1,57 @@
+#box {
+  height: 100%;
+  #header {
+    height: 5%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+
+    #head_bar {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      div {
+        margin: auto 0;
+      }
+      button {
+        border-radius: 20px;
+        height: 50%;
+        margin: auto 0;
+      }
+      button:hover {
+        background-color: cornflowerblue;
+      }
+    }
+  }
+  #body {
+    height: 95%;
+    background-color: gray;
+    hr {
+      background-color: black;
+      margin: 0;
+    }
+    #fr_container {
+      margin: 10px 50px;
+      display: flex;
+      justify-content: space-between;
+
+      #select {
+        height: 30px;
+        cursor: pointer;
+      }
+
+      #select:hover {
+        background-color: cornflowerblue;
+      }
+
+      #delete {
+        height: 30px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+      #delete:hover {
+        background-color: red;
+      }
+    }
+  }
+}

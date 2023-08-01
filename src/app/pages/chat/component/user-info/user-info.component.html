@@ -1,0 +1,14 @@
+<div  id="user-parent">
+    <div class="box" id="ava">
+        <img id="avatar" [src]="user?.avatarUrl??''">
+    </div>
+    <div class="box" id="inf">
+        <p>{{user?.name??''}}</p>
+        <p>{{user?.email??''}}</p>
+        
+    </div>
+    <div class="box" id="btn">
+        <button (click)="addFriend()">Add friend</button>
+        <button (click)="userService.logout()">Logout</button>
+    </div>
+</div>
